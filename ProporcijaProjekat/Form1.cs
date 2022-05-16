@@ -379,29 +379,28 @@ namespace ProporcijaProjekat
                     double vr2D = Convert.ToDouble(txtVrednost2.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
-                    label4.Text = $"x  = {vr3D * vr2D} / {vr4D}";
+                    label4.Text = $"x = {vr3D * vr2D} / {vr4D}";
                 }
                 else if (string.IsNullOrEmpty(txtVrednost2.Text))
                 {
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
-                    label4.Text = $" x  = {vr1D * vr4D} / {vr3D}";
+                    label4.Text = $"x = {vr1D * vr4D} / {vr3D}";
                 }
                 else if (string.IsNullOrEmpty(txtVrednost3.Text))
                 {
                     double vr2D = Convert.ToDouble(txtVrednost2.Text);
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
-
-                    label4.Text = $"{vr1D * vr4D} / {vr2D} = x ";
+                    label4.Text = $"x = {vr1D * vr4D} / {vr2D}";
                 }
                 else if (string.IsNullOrEmpty(txtVrednost4.Text))
                 {
                     double vr2D = Convert.ToDouble(txtVrednost2.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
-                    label4.Text = $" {vr3D * vr2D} / {vr1D} =  x ";
+                    label4.Text = $"x =  {vr3D * vr2D} / {vr1D} ";
                 }
             }
             else if (vrstaProporcije == 2)
@@ -413,32 +412,34 @@ namespace ProporcijaProjekat
                     double vr2D = Convert.ToDouble(txtVrednost2.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
-                    label4.Text = $"x  = {vr3D * vr4D} / {vr2D}";
+                    label4.Text = $"x = {vr3D * vr4D} / {vr2D}";
                 }
                 else if (string.IsNullOrEmpty(txtVrednost2.Text))
                 {
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
-                    label4.Text = $" x  = {vr3D * vr4D} / {vr1D}";
+                    label4.Text = $"x = {vr3D * vr4D} / {vr1D}";
                 }
                 else if (string.IsNullOrEmpty(txtVrednost3.Text))
                 {
                     double vr2D = Convert.ToDouble(txtVrednost2.Text);
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
-                    
-                    label4.Text = $"{vr1D * vr2D} / {vr4D} = x ";
+
+                    label4.Text = $"x = {vr1D * vr2D} / {vr4D}";
                 }
                 else if (string.IsNullOrEmpty(txtVrednost4.Text))
                 {
                     double vr2D = Convert.ToDouble(txtVrednost2.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
-                    label4.Text = $" {vr1D * vr2D} / {vr3D} =  x ";
+                    label4.Text = $"x =  {vr1D * vr2D} / {vr3D}";
+                   
                 }
             }
             btnResenje4.Show();
+            
         }
 
         private void btnResenje4_Click(object sender, EventArgs e)
@@ -454,14 +455,14 @@ namespace ProporcijaProjekat
                     double vr2D = Convert.ToDouble(txtVrednost2.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
-                    label5.Text = $"x  = {vr3D * vr2D / vr4D}";
+                    label5.Text = "x =" + (vr3D * vr2D / vr4D).ToString("0.00");
                 }
                 else if (string.IsNullOrEmpty(txtVrednost2.Text))
                 {
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
-                    label5.Text = $" x  = {vr1D * vr4D / vr3D}";
+                    label5.Text = " x =" + (vr1D * vr4D / vr3D).ToString("0.00");
                 }
                 else if (string.IsNullOrEmpty(txtVrednost3.Text))
                 {
@@ -469,14 +470,14 @@ namespace ProporcijaProjekat
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
 
-                    label5.Text = $"{vr1D * vr4D / vr2D} = x ";
+                    label5.Text = "x =" + (vr1D * vr4D / vr2D).ToString("0.00");
                 }
                 else if (string.IsNullOrEmpty(txtVrednost4.Text))
                 {
                     double vr2D = Convert.ToDouble(txtVrednost2.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
-                    label5.Text = $" {vr3D * vr2D / vr1D} =  x ";
+                    label5.Text = "x =" + (vr3D * vr2D / vr1D).ToString("0.00");
                 }
             }
             else if (vrstaProporcije == 2)
@@ -488,14 +489,15 @@ namespace ProporcijaProjekat
                     double vr2D = Convert.ToDouble(txtVrednost2.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
-                    label5.Text = $"x  = {vr3D * vr4D / vr2D}";
+                    label5.Text = "x  = "+(vr3D * vr4D / vr2D).ToString("0.00");
+                  
                 }
                 else if (string.IsNullOrEmpty(txtVrednost2.Text))
                 {
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
-                    label5.Text = $" x  = {vr3D * vr4D / vr1D}";
+                    label5.Text =  "x =" + (vr3D * vr4D / vr1D).ToString("0.00");
                 }
                 else if (string.IsNullOrEmpty(txtVrednost3.Text))
                 {
@@ -503,17 +505,18 @@ namespace ProporcijaProjekat
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
                     double vr4D = Convert.ToDouble(txtVrednost4.Text);
 
-                    label5.Text = $"{vr1D * vr2D / vr4D} = x ";
+                    label5.Text = "x =" + (vr1D * vr2D / vr4D).ToString("0.00");
                 }
                 else if (string.IsNullOrEmpty(txtVrednost4.Text))
                 {
                     double vr2D = Convert.ToDouble(txtVrednost2.Text);
                     double vr3D = Convert.ToDouble(txtVrednost3.Text);
                     double vr1D = Convert.ToDouble(txtVrednost1.Text);
-                    label5.Text = $" {vr1D * vr2D / vr3D} =  x ";
+                    label5.Text ="x =" + (vr1D * vr2D / vr3D).ToString("0.00");
                 }
-                btnRestartuj.Visible = true;
+                
             }
+            btnRestartuj.Visible = true;
         }
 
        
